@@ -1,6 +1,6 @@
 # react-simple-modal
 
-[![npm version](https://img.shields.io/npm/v/@hrnet/react-simple-modal.svg)](https://www.npmjs.com/package/@hrnet/react-simple-modal)
+[![npm version](https://img.shields.io/npm/v/@getsu7/react-simple-modal.svg)](https://www.npmjs.com/package/@getsu7/react-simple-modal)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 > Simple, performant and accessible React Modal component. Migration from jQuery Modal plugin to React.

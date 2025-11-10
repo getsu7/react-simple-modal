@@ -1,0 +1,25 @@
+{
+  "name": "react-simple-modal",
+  "version": "1.0.0",
+  "description": "Composant Modal React simple et léger",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "modal",
+    "react",
+    "component",
+    "lightweight",
+    "simple"
+  ],
+  "author": "getsu",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
+

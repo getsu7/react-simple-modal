@@ -16,20 +16,20 @@
 ## 📦 Installation
 
 ```bash
-npm install react-simple-modal
+npm install @getsu7/react-simple-modal
 ```
 
 or with yarn:
 
 ```bash
-yarn add react-simple-modal
+yarn add @getsu7/react-simple-modal
 ```
 
 ## 🚀 Basic Usage
 
 ```jsx
 import { useState } from 'react';
-import Modal from '@hrnet/react-simple-modal';
+import Modal from '@getsu7/react-simple-modal';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -131,20 +131,6 @@ The component follows accessibility best practices:
 - **Focus**: Automatically manages focus (focus trap)
 - **Keyboard**: Escape key support to close
 - **Screen readers**: Customizable ARIA labels
-
-## 🛠️ Development
-
-### Build
-
-```bash
-npm run build
-```
-
-### Development Mode
-
-```bash
-npm run dev
-```
 
 ## 🤝 Contributing
 

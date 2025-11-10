@@ -3,15 +3,15 @@
 [![npm version](https://img.shields.io/npm/v/@hrnet/react-simple-modal.svg)](https://www.npmjs.com/package/@hrnet/react-simple-modal)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-> Composant Modal React simple, performant et accessible. Migration du plugin jQuery Modal vers React.
+> Simple, performant and accessible React Modal component. Migration from jQuery Modal plugin to React.
 
-## 🎯 Pourquoi ce composant ?
+## 🎯 Why this component?
 
-- ⚡ **Performance** : Composant léger (~5KB)
-- ♿ **Accessibilité** : Support ARIA, gestion du focus et du clavier
-- 🎨 **Personnalisable** : Styles CSS facilement modifiables
-- 📦 **Sans dépendance** : Seulement React en peer dependency
-- 🔧 **Simple** : API intuitive et facile à utiliser
+- ⚡ **Performance**: Lightweight component (~5KB)
+- ♿ **Accessibility**: ARIA support, focus and keyboard management
+- 🎨 **Customizable**: Easily modifiable CSS styles
+- 📦 **No dependencies**: Only React as peer dependency
+- 🔧 **Simple**: Intuitive and easy-to-use API
 
 ## 📦 Installation
 
@@ -19,13 +19,13 @@
 npm install react-simple-modal
 ```
 
-ou avec yarn :
+or with yarn:
 
 ```bash
 yarn add react-simple-modal
 ```
 
-## 🚀 Utilisation de base
+## 🚀 Basic Usage
 
 ```jsx
 import { useState } from 'react';
@@ -37,17 +37,17 @@ function App() {
   return (
     <div>
       <button onClick={() => setIsOpen(true)}>
-        Ouvrir la modale
+        Open Modal
       </button>
 
       <Modal 
         isOpen={isOpen} 
         onClose={() => setIsOpen(false)}
       >
-        <h2>Titre de la modale</h2>
-        <p>Contenu de votre modale ici.</p>
+        <h2>Modal Title</h2>
+        <p>Your modal content here.</p>
         <button onClick={() => setIsOpen(false)}>
-          Fermer
+          Close
         </button>
       </Modal>
     </div>
@@ -57,33 +57,33 @@ function App() {
 
 ## 📖 Props
 
-| Prop | Type | Défaut | Description |
-|------|------|--------|-------------|
-| `isOpen` | `boolean` | **requis** | Contrôle l'affichage de la modale |
-| `onClose` | `function` | **requis** | Callback appelé à la fermeture |
-| `children` | `ReactNode` | **requis** | Contenu de la modale |
-| `className` | `string` | `''` | Classe CSS additionnelle |
-| `closeOnEscape` | `boolean` | `true` | Fermer avec la touche Escape |
-| `closeOnOverlayClick` | `boolean` | `true` | Fermer en cliquant sur l'overlay |
-| `showCloseButton` | `boolean` | `true` | Afficher le bouton de fermeture (×) |
-| `ariaLabel` | `string` | `'Fenêtre modale'` | Label ARIA pour l'accessibilité |
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `isOpen` | `boolean` | **required** | Controls the modal visibility |
+| `onClose` | `function` | **required** | Callback called on close |
+| `children` | `ReactNode` | **required** | Modal content |
+| `className` | `string` | `''` | Additional CSS class |
+| `closeOnEscape` | `boolean` | `true` | Close with Escape key |
+| `closeOnOverlayClick` | `boolean` | `true` | Close by clicking on overlay |
+| `showCloseButton` | `boolean` | `true` | Show close button (×) |
+| `ariaLabel` | `string` | `'Fenêtre modale'` | ARIA label for accessibility |
 
-## 🎨 Exemples d'utilisation
+## 🎨 Usage Examples
 
-### Modale de confirmation
+### Confirmation Modal
 
 ```jsx
 <Modal isOpen={showConfirm} onClose={() => setShowConfirm(false)}>
-  <h3>Confirmer l'action ?</h3>
-  <p>Êtes-vous sûr de vouloir continuer ?</p>
+  <h3>Confirm Action?</h3>
+  <p>Are you sure you want to continue?</p>
   <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
-    <button onClick={handleConfirm}>Confirmer</button>
-    <button onClick={() => setShowConfirm(false)}>Annuler</button>
+    <button onClick={handleConfirm}>Confirm</button>
+    <button onClick={() => setShowConfirm(false)}>Cancel</button>
   </div>
 </Modal>
 ```
 
-### Modale sans bouton de fermeture
+### Modal without Close Button
 
 ```jsx
 <Modal 
@@ -95,12 +95,12 @@ function App() {
 >
   <div style={{ textAlign: 'center' }}>
     <div className="spinner" />
-    <p>Traitement en cours...</p>
+    <p>Processing...</p>
   </div>
 </Modal>
 ```
 
-### Modale avec style personnalisé
+### Modal with Custom Style
 
 ```jsx
 <Modal 
@@ -108,12 +108,12 @@ function App() {
   onClose={handleClose}
   className="custom-modal"
 >
-  <h2>Modale personnalisée</h2>
-  <p>Contenu avec style custom</p>
+  <h2>Custom Modal</h2>
+  <p>Content with custom style</p>
 </Modal>
 ```
 
-Ajoutez votre CSS personnalisé :
+Add your custom CSS:
 
 ```css
 .custom-modal {
@@ -123,16 +123,16 @@ Ajoutez votre CSS personnalisé :
 }
 ```
 
-## ♿ Accessibilité
+## ♿ Accessibility
 
-Le composant suit les bonnes pratiques d'accessibilité :
+The component follows accessibility best practices:
 
-- **ARIA** : Utilise `role="dialog"` et `aria-modal="true"`
-- **Focus** : Gère automatiquement le focus (piège à focus)
-- **Clavier** : Support de la touche Escape pour fermer
-- **Screen readers** : Labels ARIA personnalisables
+- **ARIA**: Uses `role="dialog"` and `aria-modal="true"`
+- **Focus**: Automatically manages focus (focus trap)
+- **Keyboard**: Escape key support to close
+- **Screen readers**: Customizable ARIA labels
 
-## 🛠️ Développement
+## 🛠️ Development
 
 ### Build
 
@@ -140,22 +140,22 @@ Le composant suit les bonnes pratiques d'accessibilité :
 npm run build
 ```
 
-### Mode développement
+### Development Mode
 
 ```bash
 npm run dev
 ```
 
-## 🤝 Contribution
+## 🤝 Contributing
 
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
+Contributions are welcome! Feel free to open an issue or a pull request.
 
-## 🔗 Liens
+## 🔗 Links
 
-- [Repository GitHub](https://github.com/getsu7/react-simple-modal)
+- [GitHub Repository](https://github.com/getsu7/react-simple-modal)
 - [NPM Package](https://www.npmjs.com/package/react-simple-modal)
 
 ---
 
-Créé par getsu7
+Created by getsu7
 

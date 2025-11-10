@@ -1,5 +1,5 @@
 {
-  "name": "@getsu7/react-simple-modal",
+  "name": "react-simple-modal",
   "version": "1.0.0",
   "description": "Composant Modal React simple et léger",
   "main": "dist/index.js",

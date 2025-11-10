@@ -139,7 +139,7 @@ Contributions are welcome! Feel free to open an issue or a pull request.
 ## 🔗 Links
 
 - [GitHub Repository](https://github.com/getsu7/react-simple-modal)
-- [NPM Package](https://www.npmjs.com/package/react-simple-modal)
+- [NPM Package](https://www.npmjs.com/package/@getsu7/react-simple-modal)
 
 ---
 
